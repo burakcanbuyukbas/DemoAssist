@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BE033F47"
+    tools:context=".MainActivity">
+
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="14dp"
+        android:layout_gravity="center"
+        >
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            >
+
+
+            <ImageButton
+                android:id="@+id/imageButtonWeather"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_column="0"
+                android:background="@drawable/weather_icon"
+                android:scaleType="fitCenter"/>
+
+
+
+            <ImageButton
+                android:id="@+id/imageButtonNews"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_column="1"
+                android:scaleType="fitCenter"
+                android:background="@drawable/news_icon" />
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewWeather"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_column="0"
+                android:text="Weather"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/textViewNews"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:text="News"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:layout_column="1"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            >
+
+            <ImageButton
+                android:id="@+id/imageButtonTranslate"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_column="0"
+                android:scaleType="fitCenter"
+                android:background="@drawable/translate_icon"
+                />
+
+            <ImageButton
+                android:id="@+id/imageButton_Speech2Text"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_column="1"
+                android:scaleType="fitCenter"
+                android:background="@drawable/s2t_icon" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewTranslate"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:text="Translate"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:layout_column="0"/>
+
+            <TextView
+                android:id="@+id/textViewS2P"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:text="Speech to Text"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:layout_column="1"/>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+
+            <ImageButton
+                android:id="@+id/imageButtonAboutMe"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_column="0"
+                android:scaleType="fitCenter"
+                android:background="@drawable/about_me_icon"
+                />
+
+            <TextView
+                android:id="@+id/textViewToken"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_gravity="center_horizontal"
+                android:background="#23FFFFFF"
+                android:hint="Token"
+                android:minWidth="180dp"
+                android:maxWidth="180dp"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#FFFFFF" />
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewAboutMe"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:text="About Me"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:layout_column="0"/>
+
+
+            <Button
+                android:id="@+id/button_getToken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Token"
+                android:layout_column="1"/>
+
+
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

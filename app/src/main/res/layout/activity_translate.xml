@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF0099CC">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        tools:context=".TranslateActivity">
+
+
+
+        <Spinner
+            android:id="@+id/spSourceType"
+            android:layout_width="169dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="65dp"
+            android:textAlignment="center"
+            android:textColor="@color/secondary_text_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></Spinner>
+
+        <Spinner
+            android:id="@+id/spDestType"
+            android:layout_width="185dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/secondary_text_color"
+            app:layout_constraintBottom_toBottomOf="@id/spSourceType"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/spSourceType"></Spinner>
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="top"
+            android:minLines="5"
+            android:textColor="@color/secondary_text_color"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:background="@color/emui_color_gray_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spDestType" />
+
+        <TextView
+            android:id="@+id/tv_src_len"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/et_input"
+            app:layout_constraintEnd_toEndOf="@id/et_input" />
+
+        <TextView
+            android:id="@+id/tv_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="top"
+            android:minLines="5"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:background="@color/emui_color_gray_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_input" />
+
+        <TextView
+            android:id="@+id/tv_dst_len"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_output"
+            app:layout_constraintEnd_toEndOf="@id/tv_output" />
+
+        <Button
+            android:id="@+id/btn_translator"
+            android:layout_width="180dp"
+            android:layout_height="43dp"
+            android:layout_margin="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Translate"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_output" />
+
+        <Button
+            android:id="@+id/btn_identification"
+            android:layout_width="180dp"
+            android:layout_height="43dp"
+            android:layout_margin="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Recognize Language"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_translator"
+            app:layout_constraintTop_toBottomOf="@id/tv_output" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
